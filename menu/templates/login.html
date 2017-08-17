@@ -6,7 +6,7 @@
 {% block content %}
 <div class="row">
 	<div class="col-sm-6 col-sm-offset-3">
-	<form method="POST" action="{% url 'posts:login' %}" enctype="multipart/form-data">
+	<form method="POST" action="{% url 'menu:login' %}" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{form|crispy}}
 		<input type="submit" value="Login" class="btn btn-success">
